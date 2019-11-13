@@ -136,6 +136,21 @@ PLOT
 .plot {
     background-color: #c2b8b2;
     grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding-top: 10px;
+
+}
+
+#chart {
+    grid-column: 2/-1;
+}
+
+#y-axis {
+    grid-column: 1/2;
+    max-width: 45px;
+    margin-left: 10px;
 }
 
 /*************************************************

@@ -15,6 +15,9 @@
     <!-- CUSTOM STYLES-->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- RICKSHAW CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.3/rickshaw.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -55,7 +58,12 @@
         </div>
 
         <!-- PLOT -->
-        <div class="plot">Live Plot</div>
+        <div class="plot">
+            <!---->
+            <div id="y-axis"></div>
+            <div id="chart"></div>
+            
+        </div>
 
         <!-- BUTTONS -->
         <div class="buttons">
@@ -76,5 +84,10 @@
             </button>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.2.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.5/rickshaw.js"></script>
+
+    <!----><script src="plot.js"></script>
 </body>
 </html>
